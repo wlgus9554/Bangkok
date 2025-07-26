@@ -420,7 +420,9 @@ content {
 	<%-- <jsp:include page="/WEB-INF/views/member/loginModal.jsp"></jsp:include>
 
 	<!-- Logout Modal-->
-	//<jsp:include page="/WEB-INF/views/member/logoutModal.jsp"></jsp:include> --%>
+	//<jsp:include page="/WEB-INF/views/member/logoutModal.jsp"></jsp:include>
+	
+	로그인 파트의 모달임. 다른 파트의 코드로 에러 발생. 주석처리함. --%>
 
 	<!-- Core plugin JavaScript-->
 	<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
