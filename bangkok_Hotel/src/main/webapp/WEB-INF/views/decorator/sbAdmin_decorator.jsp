@@ -417,10 +417,10 @@ content {
 		class="fas fa-angle-up"></i>
 	</a>
 	<!-- Login Modal-->
-	<jsp:include page="/WEB-INF/views/member/loginModal.jsp"></jsp:include>
+	<%-- <jsp:include page="/WEB-INF/views/member/loginModal.jsp"></jsp:include>
 
 	<!-- Logout Modal-->
-	<jsp:include page="/WEB-INF/views/member/logoutModal.jsp"></jsp:include>
+	//<jsp:include page="/WEB-INF/views/member/logoutModal.jsp"></jsp:include> --%>
 
 	<!-- Core plugin JavaScript-->
 	<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
