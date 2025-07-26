@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE XML>
-<!-- 작성자 : 이영환 -->
-<!-- 작성일 : 2024-07-13 -->
+<!-- 작성자 : 김승준 -->
+<!-- 작성일 : 2017-01-13 -->
 <!-- 꾸미기(레이아웃)에 대한 선언 -->
-
 <decorators defaultdir="/WEB-INF/views/decorator">
-	<!-- 기본적인 레이아웃에 대한 선언 -->
 	<!-- hello에 대한 요청이 들어오면 적용시키는 레이아웃 선언 -->
+	<decorator name="main" page="default_decorator.jsp">
+		<pattern>/main/*</pattern>
+		<pattern>/board/*</pattern>
+		<pattern>/image/*</pattern>
+		<pattern>/notice/*</pattern>
+		<pattern>/category/*</pattern>
+		<pattern>/member/*</pattern>
+		<pattern>/goods/*</pattern>
+		<pattern>/help/*</pattern>
+		<pattern>/room/*</pattern>
+		<pattern>/teacher/*</pattern>
+		<pattern>/schedule/*</pattern>
+
+	</decorator>
+	<!-- 모바일 -->
 	<decorator name="main" page="default_decorator.jsp">
 		<pattern>/m/main/*</pattern>
 		<pattern>/m/board/*</pattern>
-		<pattern>/m/notice/*</pattern>
 		<pattern>/m/image/*</pattern>
-		<pattern>/m/qna/*</pattern>
-		<pattern>/m/message/*</pattern>
-		<pattern>/m/member/*</pattern>
+		<pattern>/m/notice/*</pattern>
 		<pattern>/m/category/*</pattern>
-		<pattern>/m/goods/*</pattern>
+
 	</decorator>
 	
-	<!-- 기본적인 레이아웃에 대한 선언 -->
-	<!-- hello에 대한 요청이 들어오면 적용시키는 레이아웃 선언 -->
 	<decorator name="sbAdmin" page="sbAdmin_decorator.jsp">
 		<pattern>/main/*</pattern>
-		<pattern>/board/*</pattern>
-		<pattern>/notice/*</pattern>
-		<pattern>/image/*</pattern>
-		<pattern>/qna/*</pattern>
-		<pattern>/message/*</pattern>
+		<pattern>/air/*</pattern>
+		<pattern>/hotel/*</pattern>
+		<pattern>/amenities/*</pattern>
+		<pattern>/airReservation/*</pattern>
+		<pattern>/event/*</pattern>
+		<pattern>/info/*</pattern>
 		<pattern>/member/*</pattern>
-		<pattern>/category/*</pattern>
-		<pattern>/goods/*</pattern>
+		<pattern>/plan/*</pattern>
+		<pattern>/hotel_reservations/*</pattern>
+		<pattern>/reviews/*</pattern>
+		<pattern>/seat/*</pattern>
+
 	</decorator>
 	
 <!-- 	<decorator name="admin" page="admin_decorator.jsp"> -->
